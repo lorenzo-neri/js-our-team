@@ -44,42 +44,42 @@ let team = [
     {
         name: 'Wayne Barnett',
         role: 'Founder & CEO',
-        image: 'wayne-barnett-founder-ceo.jpg'
+        image: './assets/img/wayne-barnett-founder-ceo.jpg'
     },
 
     //[1]
     {
         name: 'Angela Caroll',
         role: 'Chief Editor',
-        image: 'angela-caroll-chief-editor.jpg'
+        image: './assets/img/angela-caroll-chief-editor.jpg'
     },
 
     //[2]
     {
         name: 'Walter Gordon',
         role: 'Office Manager',
-        image: 'walter-gordon-office-manager.jpg'
+        image: './assets/img/walter-gordon-office-manager.jpg'
     },
 
     //[3]
     {
         name: 'Angela Lopez',
         role: 'Social Media Manager',
-        image: 'angela-lopez-social-media-manager.jpg'
+        image: './assets/img/angela-lopez-social-media-manager.jpg'
     },
 
     //[4]
     {
         name: 'Scott Estrada',
         role: 'Developer',
-        image: 'scott-estrada-developer.jpg'
+        image: './assets/img/scott-estrada-developer.jpg'
     },
 
     //[5]
     {
         name: 'Barbara Ramos',
         role: 'Graphic Designer',
-        image: 'barbara-ramos-graphic-designer.jpg'
+        image: './assets/img/barbara-ramos-graphic-designer.jpg'
     }
 
 ]
@@ -87,14 +87,23 @@ let team = [
 //stampo array
 console.log(team);
 
-let membersEl = document.querySelector('.team');
+let teamEl = document.querySelector('.team');
 
 //Stampo in console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-for (const key in team) {
+/* for (const key in team) {
     console.log(team[key]);
-
-    membersEl.append(team[key]);
-}
+} */
 
 //Stampo le informazioni su DOM sottoforma di stringhe
 
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    console.log(member);
+    const markupEl = 
+    `<div>${member['name']}</div>
+    <div>${member['role']}</div>
+    <div>${member['image']}</div>`
+
+    teamEl.insertAdjacentHTML('beforeend', markupEl);
+    
+}
