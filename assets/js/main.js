@@ -96,13 +96,27 @@ let teamEl = document.querySelector('.team');
 
 //Stampo le informazioni su DOM sottoforma di stringhe
 
-for (let i = 0; i < team.length; i++) {
+/* for (let i = 0; i < team.length; i++) {
     const member = team[i];
     console.log(member);
     const markupEl = 
     `<div>${member['name']}</div>
     <div>${member['role']}</div>
     <div>${member['image']}</div>`
+
+    teamEl.insertAdjacentHTML('beforeend', markupEl);
+    
+} */
+
+//Trasformo la stringa in un immagine real
+
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    console.log(member);
+    const markupEl = 
+    `<div>${member['name']}</div>
+    <div>${member['role']}</div>
+    <img src="${member['image']}" alt="Member of Team">`
 
     teamEl.insertAdjacentHTML('beforeend', markupEl);
     
