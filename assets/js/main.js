@@ -109,15 +109,20 @@ let teamEl = document.querySelector('.team');
 } */
 
 //Trasformo la stringa in un immagine real
+//Creo le card
 
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
     console.log(member);
-    const markupEl = 
-    `<div>${member['name']}</div>
-    <div>${member['role']}</div>
-    <img src="${member['image']}" alt="Member of Team">`
+    const markupEl =
+        `<div class="col-4">
+            <div class="card p-2 m-3 bg-info">
+                <h5>${member['name']}</h5>
+                <div>${member['role']}</div>
+                <img class="card bg-info" src="${member['image']}" alt="Member of Team"></div>
+            </div>`
 
     teamEl.insertAdjacentHTML('beforeend', markupEl);
-    
+
 }
+
