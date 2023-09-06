@@ -138,5 +138,15 @@ let formEl = addEventListener('submit', function (e){
 
     //console.log(team);
 
+    const markupEl =
+        `<div class="col-12 col-md-4">
+            <div class="card p-2 m-3 bg-info">
+                <h5>${newMember['name']}</h5>
+                <div>${newMember['role']}</div>
+                <img class="card bg-info" src="${newMember['image']}" alt="Member of Team"></div>
+            </div>`
+
+    teamEl.insertAdjacentHTML('beforeend', markupEl);
+
 })
 
