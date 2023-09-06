@@ -122,17 +122,17 @@ Fare un form che permetta di aggiungere un nuovo membro del team.
 Per l’immagine va bene usare semplicemente una url causale da picsum oppure anche la stesse immagine. 
 */
 
-let formEl = addEventListener('submit', function (e){
-    
+let formEl = addEventListener('submit', function (e) {
+
     e.preventDefault(); //solo per fare prove, poi togliere
-    
+
     //console.log('enter on form');
-    
+
     const fullNameEl = document.getElementById('full_name').value;
     const roleEl = this.document.getElementById('role').value;
     console.log(`Full Name: ${fullNameEl} Role: ${roleEl}`);
 
-    let newMember = {name: fullNameEl, role: roleEl, image: 'https://picsum.photos/400/429'};
+    let newMember = { name: fullNameEl, role: roleEl, image: 'https://picsum.photos/400/429' };
 
     team.push(newMember);
 
