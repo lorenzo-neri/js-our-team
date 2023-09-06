@@ -34,3 +34,52 @@ Graphic Designer
 barbara-ramos-graphic-designer.jpg
 
 */
+
+//creo l'array di oggetti per rappresentare i membri del team
+//array = team
+//objects = members
+let team = [
+
+    //[0]
+    {
+        name: 'Wayne Barnett',
+        role: 'Founder & CEO',
+        image: 'wayne-barnett-founder-ceo.jpg'
+    },
+    
+    //[1]
+    {
+        name: 'Angela Caroll',
+        role: 'Chief Editor',
+        image: 'angela-caroll-chief-editor.jpg'
+    },
+    
+    //[2]
+    {
+        name: 'Walter Gordon',
+        role: 'Office Manager',
+        image: 'walter-gordon-office-manager.jpg'
+    },
+    
+    //[3]
+    {
+        name: 'Angela Lopez',
+        role: 'Social Media Manager',
+        image: 'angela-lopez-social-media-manager.jpg'
+    },
+
+    //[4]
+    {
+        name: 'Scott Estrada',
+        role: 'Developer',
+        image: 'scott-estrada-developer.jpg'
+    },
+    
+    //[5]
+    {
+        name: 'Barbara Ramos',
+        role: 'Graphic Designer',
+        image: 'barbara-ramos-graphic-designer.jpg'
+    }
+
+]
