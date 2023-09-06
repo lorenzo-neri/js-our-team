@@ -87,7 +87,14 @@ let team = [
 //stampo array
 console.log(team);
 
+let membersEl = document.querySelector('.team');
+
 //Stampo in console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 for (const key in team) {
     console.log(team[key]);
+
+    membersEl.append(team[key]);
 }
+
+//Stampo le informazioni su DOM sottoforma di stringhe
+
