@@ -46,21 +46,21 @@ let team = [
         role: 'Founder & CEO',
         image: 'wayne-barnett-founder-ceo.jpg'
     },
-    
+
     //[1]
     {
         name: 'Angela Caroll',
         role: 'Chief Editor',
         image: 'angela-caroll-chief-editor.jpg'
     },
-    
+
     //[2]
     {
         name: 'Walter Gordon',
         role: 'Office Manager',
         image: 'walter-gordon-office-manager.jpg'
     },
-    
+
     //[3]
     {
         name: 'Angela Lopez',
@@ -74,7 +74,7 @@ let team = [
         role: 'Developer',
         image: 'scott-estrada-developer.jpg'
     },
-    
+
     //[5]
     {
         name: 'Barbara Ramos',
@@ -83,3 +83,11 @@ let team = [
     }
 
 ]
+
+//stampo array
+console.log(team);
+
+//Stampo in console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+for (const key in team) {
+    console.log(team[key]);
+}
