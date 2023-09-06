@@ -131,6 +131,12 @@ let formEl = addEventListener('submit', function (e){
     const fullNameEl = document.getElementById('full_name').value;
     const roleEl = this.document.getElementById('role').value;
     console.log(`Full Name: ${fullNameEl} Role: ${roleEl}`);
-    
+
+    let newMember = {name: fullNameEl, role: roleEl, image: 'https://picsum.photos/400/429'};
+
+    team.push(newMember);
+
+    //console.log(team);
+
 })
 
